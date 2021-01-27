@@ -25,6 +25,8 @@ Be careful to set your feature file path correctly! The following is to run expe
 python preprocess/preprocess_features.py --gpu_id 0 --dataset svqa --model resnet101 --num_clips {num_clips}
 ```
 2. To extract motion features:
+
+-Download ResNeXt-101 [pretrained model](https://drive.google.com/drive/folders/1zvl89AgFAApbH0At-gMuZSeQB_LpNP-M) (resnext-101-kinetics.pth) and place it to `data/preprocess/pretrained/`.
 ```
 python preprocess/preprocess_features.py --dataset svqa --model resnext101 --image_height 112 --image_width 112 --num_clips {num_clips}
 ```
