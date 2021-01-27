@@ -8,7 +8,7 @@ DualVGR Unit             |  DualVGR Architecture
 ![](DualVGRUnit.png)  |  ![](overview.png)
 
 ## Dataset
--Download [SVQA](https://github.com/SVQA-founder/SVQA), [MSRVTT-QA, MSVD-QA](https://github.com/xudejing/video-question-answering) dataset and edit absolute paths in `preprocess/preprocess_features.py` and `preprocess/preprocess_questions.py` upon where you locate your data. What's more, for SVQA dataset, you have to split the datasets according to our [official split](https://github.com/MMIRMagPie/SVQA_splits).
+-Download [SVQA](https://github.com/SVQA-founder/SVQA), [MSRVTT-QA, MSVD-QA](https://github.com/xudejing/video-question-answering) dataset and edit absolute paths in `preprocess/preprocess_features.py` and `preprocess/preprocess_questions.py` upon where you locate your data. What's more, for SVQA dataset, you have to split the datasets according to our [official split](https://github.com/MMIRMagPie/DualVGR-VideoQA/tree/main/SVQA_splits).
 
 ## Our Final Performance on each dataset
 Comparison with SoTA on MSVD-QA and MSRVTT-QA datasets
