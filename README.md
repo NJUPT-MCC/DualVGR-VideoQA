@@ -29,6 +29,7 @@ python preprocess/preprocess_features.py --gpu_id 0 --dataset svqa --model resne
 python preprocess/preprocess_features.py --dataset svqa --model resnext101 --image_height 112 --image_width 112 --num_clips {num_clips}
 ```
 3. To extract textual features:
+
 -Download [glove pretrained 300d word vectors](http://nlp.stanford.edu/data/glove.840B.300d.zip) to `data/glove/` and process it into a pickle file:
 ```
  python txt2pickle.py
