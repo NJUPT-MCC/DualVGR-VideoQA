@@ -1,0 +1,30 @@
+gpu_id: 0
+multi_gpus: False
+num_workers: 4
+seed: 666
+exp_name: 'expMSRVTT-QA'
+model_type: 'DualVGR'
+graph_module: 'GAT'
+graph_layers: 1
+
+train:
+  lr: 0.0001
+  batch_size: 128
+  restore: False
+  max_epochs: 25
+  word_dim: 300
+  module_dim: 768
+  glove: True
+  num_of_nodes: 16 
+
+val:
+  flag: True
+
+test:
+  test_num: 0
+  write_preds: False
+
+dataset:
+  name: 'msrvtt-qa'
+  data_dir: 'data/msrvtt-qa'
+  save_dir: 'results/'
