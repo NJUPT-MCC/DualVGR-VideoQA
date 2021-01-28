@@ -55,6 +55,3 @@ First, you have to set the correct file path. Then, to evaluate the trained mode
 ```bash
 python validate.py --cfg configs/svqa_DualVGR_20.yml --unit_layers {unit_layers}
 ```
-
-## Acknowledgement
-Our implementation is based on this [repo](https://github.com/thaolmk54/hcrn-videoqa).
