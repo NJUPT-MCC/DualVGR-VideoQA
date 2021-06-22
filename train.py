@@ -65,7 +65,7 @@ def train(cfg):
         'graph_layers': cfg.graph_layers
     }
     model_kwargs_tosave = {k: v for k, v in model_kwargs.items() if k != 'vocab'}
-    if cfg.model_type == 'baseline':
+    if cfg.model_type == 'DualVGR':
         model = modelset.DualVGR(**model_kwargs).to(device)
 
     pytorch_total_params = sum(p.numel() for p in model.parameters() if p.requires_grad)
